@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <title>Product info</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="index-header">
+          <div class="index-logo">
+            <a href="index.html"><img src="image/LOGO.png" alt="" /></a>
+          </div>
+          <div class="navbar">
+            <ul class="menu">
+              <li><a href="news.html">News</a></li>
+              <li class="active"><a href="productlist.html">Products</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="contectus.html">Conact us</a></li>
+              <li><a href="shopinfo.html">Shop Info</a></li>
+            </ul>
+          </div>
+          <div class="burger">
+            <span class="bar1" id="bar"></span>
+                <span class="bar2" id="bar"></span>
+                <span class="bar3" id="bar"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+        $(document).ready(function() {
+        $('.burger').on('click', function(event) {
+        event.preventDefault();
+        $('.menu').toggleClass('menu-show');
+        $('.burger').toggleClass('rotate')
+        });
+        
+        });
+      </script>
+    <div class="index-banner">
+      <div class="wrap">
+        <h2 class="index-title">Product Info</h2>
+        <div class="banner-layout">
+          <div class="banner-item">
+            <div class="banner-img">
+              <ul class="banner-img-list">
+                <li class="banner-img-item">
+                  <img src="image/product08 .jpg" alt="" />
+                </li>
+                <li class="banner-img-item">
+                  <img src="image/product09.jpg" alt="" />
+                </li>
+                <li class="banner-img-item">
+                  <img src="image//product10.jpg" alt="" />
+                </li>
+                <li class="banner-img-item">
+                  <img src="image/product11.jpg" alt="" />
+                </li>
+              </ul>
+
+              <div class="banner-arrow prev-arrow">
+                <
+              </div>
+              <div class="banner-arrow next-arrow">></div>
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-content">
+              <div class="product-date">AUG 07, 2019 / PRODUCTS</div>
+              <div class="product-name">Foldy</div>
+              <div class="product-author">by SFSO</div>
+              <div class="product-content">
+                w152 busby is an electronic lamp that provides intelligent
+                universal power from three USB outlets, detecting charging
+                requirements and managing them at their fastest rate, however
+                many variable devices are plugged in. It provides up to 3 Amps
+                of power - enough to charge the latest generation of laptop
+                computers. It can be supplied either as a freestanding or
+                wall-mountable lamp, or built-in to a surface. The w152
+                illuminates and powers the office, the workshop, the library,
+                the living room and the bedside table.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="productinfo-page2">
+            <div class="wrap">
+                    <h2 class="index-title">Related products</h2>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <a href="#"><div class="info-item-img hover">
+                              <img src="image/chair10.jpg" alt="">
+                            <img src="image/chair06.jpg" alt="">
+                            </div>
+                            <div class="info-item-content">
+                            <div class="product-date">AUG 07, 2019 / PRODUCTS</div>
+                            <div class="product-name">Foldy</div>
+                            <div class="product-author">by SFSO</div>
+                            </div></a>
+                        </div>
+                        <div class="info-item">
+                                <a href="#"><div class="info-item-img hover">
+                                <img src="image/chair08.jpg" alt="">
+                                  <img src="image/chair04.jpg" alt="">
+                                </div>
+                                <div class="info-item-content">
+                                <div class="product-date">AUG 07, 2019 / PRODUCTS</div>
+                                <div class="product-name">Foldy</div>
+                                <div class="product-author">by SFSO</div>
+                                </div></a>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <footer>
+                <div class="wrap">
+                  <div class="footer-list">
+                    <div class="footer-icon">
+                      <li>
+                        <a href="#"><img src="image/icon_fb.png" alt=""/></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="image/icon_ig.png" alt=""/></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="image/icon_twriter.png" alt=""/></a>
+                      </li>
+                    </div>
+                    <div class="footer-nav">
+                      <ul>
+                        <li><a href="contectus.html">Contact</a></li>
+                        <li><a href="productlist.html">Products</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="copyright">Copyright ©2019 HOMIE All rights reserved</div>
+                </div>
+              </footer>
+        <script>
+                $(".banner-img-list").slick({
+                  arrows: false,
+                  dots: true
+                });
+                $(".prev-arrow").on("click", function() {
+                  $(".banner-img-list").slick("slickPrev");
+                });
+          
+                $(".next-arrow").on("click", function() {
+                  $(".banner-img-list").slick("slickNext");
+                });
+              </script>
+  </body>
+</html>

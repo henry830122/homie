@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <title>Contact us</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="index-header">
+        <a href="index.html">
+          <div class="index-logo">
+            <img src="image/LOGO.png" alt="" />
+        </a>
+      </div>
+      <div class="navbar">
+        <ul class="menu">
+          <li><a href="news.html">News</a></li>
+          <li><a href="productlist.html">Products</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li class="active"><a href="contectus.html">Contact us</a></li>
+          <li><a href="shopinfo.html">Shop Info</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <span class="bar1" id="bar"></span>
+        <span class="bar2" id="bar"></span>
+        <span class="bar3" id="bar"></span>
+      </div>
+    </div>
+    </div>
+  </header>
+  <script>
+    $(document).ready(function () {
+      $('.burger').on('click', function (event) {
+        event.preventDefault();
+        $('.menu').toggleClass('menu-show');
+        $('.burger').toggleClass('rotate')
+      });
+
+    });
+  </script>
+  <div class="page-pad">
+    <div class="wrap">
+      <h2 class="index-title">Contact us</h2>
+    </div>
+  </div>
+  <div class="contect-form">
+    <div class="wrap">
+      <div class="form">
+        <p class="form-title">Contact form</p>
+        <p class="contact-time">Please call 045-633-7222 between 9:30 a.m. to 6:30 p.m. if you are in a hurry.</p>
+        Content of inquiry :<select style="font-size: 20px">
+          <option value="About purchasing items" style="display: none;">About purchasing items</option>
+          <option value="About support">About support</option>
+          <option value="About press">About press</option>
+          <option value="About employment">About employment</option>
+          <option value="Other">Other</option>
+        </select><br />
+        Name :<input type="text" placeholder="Name" style="font-size: 20px"><br />
+        Phone :<input type="text" placeholder="Phone" style="font-size: 20px"><br />
+        Email : <input type="text" placeholder="Email" style="font-size: 20px"><br />
+        Comment :<textarea name="" id=""></textarea><br />
+        <button>Comfrom</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="wrap">
+      <div class="footer-list">
+        <div class="footer-icon">
+          <li>
+            <a href="#"><img src="image/icon_fb.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="image/icon_ig.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="image/icon_twriter.png" alt="" /></a>
+          </li>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="contectus.html">Contact</a></li>
+            <li><a href="productlist.html">Products</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">Copyright ©2019 HOMIE All rights reserved</div>
+    </div>
+  </footer>
+</body>
+
+</html>
